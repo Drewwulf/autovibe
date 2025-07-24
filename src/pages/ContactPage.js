@@ -1,39 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./ContactPage.css";
-
 
 function ContactPage() {
     useEffect(() => {
         document.title = "Контакти | AUTO VIBE";
     }, []);
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
-
-    const [status, setStatus] = useState(null);
-
-    const handleChange = (e) => {
-        setFormData(prev => ({
-            ...prev,
-            [e.target.name]: e.target.value,
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Відправлені дані:", formData);  // Вивід у консоль
-
-        setStatus("success");
-        setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-        });
-    };
 
     return (
         <section className="contact-page">
@@ -42,51 +13,33 @@ function ContactPage() {
                     <h2>Зв'яжіться з нами</h2>
                     <p>Ми завжди раді допомогти! Заповніть форму або скористайтеся контактними даними нижче.</p>
                     <ul className="contact-details">
-                        <li><strong>Адреса:</strong>                  <p> вул. Борканюка 89, Ужгород, с. Минай</p>
-                        </li>
-                        <li><strong>Телефон:</strong>+38 (066) 372 62 30</li>
-                        <li><strong>Email:</strong>savarinyuriy2001@gmail.com</li>
+                        <li><strong>Адреса:</strong> вул. Борканюка 89, Ужгород, с. Минай</li>
+                        <li><strong>Телефон:</strong> +38 (066) 372 62 30</li>
+                        <li><strong>Email:</strong> savarinyuriy2001@gmail.com</li>
                         <li><strong>Години роботи:</strong> Пн-Пт: 9:00 - 18:00</li>
                     </ul>
                 </div>
 
-                <form className="contact-form" onSubmit={handleSubmit}>
-                    <input
-                        name="name"
-                        type="text"
-                        placeholder="Ваше ім'я"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        name="subject"
-                        type="text"
-                        placeholder="Тема"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        rows="5"
-                        placeholder="Ваше повідомлення"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    />
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    action="/thank-you"  // необов’язково, сторінка після відправки
+                >
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <p hidden>
+                        <label>
+                            Не заповнювати (ботам): <input name="bot-field" />
+                        </label>
+                    </p>
+
+                    <input name="name" type="text" placeholder="Ваше ім'я" required />
+                    <input name="email" type="email" placeholder="Email" required />
+                    <input name="subject" type="text" placeholder="Тема" required />
+                    <textarea name="message" rows="5" placeholder="Ваше повідомлення" required />
                     <button type="submit">Відправити</button>
-                    {status === "success" && (
-                        <p className="success-message">Дякуємо! Ваше повідомлення відправлено.</p>
-                    )}
                 </form>
             </div>
         </section>
