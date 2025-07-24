@@ -38,9 +38,10 @@ function ContactPage() {
                     <h2>Зв'яжіться з нами</h2>
                     <p>Ми завжди раді допомогти! Заповніть форму або скористайтеся контактними даними нижче.</p>
                     <ul className="contact-details">
-                        <li><strong>Адреса:</strong> вул. Центральна, 123, Ужгород</li>
-                        <li><strong>Телефон:</strong> +38 (050) 123-45-67</li>
-                        <li><strong>Email:</strong> info@autovibe.com.ua</li>
+                        <li><strong>Адреса:</strong>                  <p> вул. Борканюка 89, Ужгород, с. Минай</p>
+                        </li>
+                        <li><strong>Телефон:</strong>+38 (066) 372 62 30</li>
+                        <li><strong>Email:</strong>savarinyuriy2001@gmail.com</li>
                         <li><strong>Години роботи:</strong> Пн-Пт: 9:00 - 18:00</li>
                     </ul>
                 </div>

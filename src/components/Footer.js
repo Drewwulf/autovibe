@@ -8,9 +8,9 @@ function Footer() {
 
                 <div className="footer-section">
                     <h4 className="footer-title">Контакти</h4>
-                    <p>Телефон: <a href="tel:+380501234567" className="footer-link">+38 (050) 123 45 67</a></p>
-                    <p>Email: <a href="mailto:autovibe@gmail.com" className="footer-link">autovibe@gmail.com</a></p>
-                    <p>Адреса: вул. Автомобільна, 10, Київ</p>
+                    <p>Телефон: <a href="tel:+380501234567" className="footer-link">+38 (066) 372 62 30</a></p>
+                    <p>Email: <a href="mailto:savarinyuriy2001@gmail.com" className="footer-link">savarinyuriy2001@gmail.com</a></p>
+                    <p>Адреса: вул. Борканюка 89, Ужгород, с. Минай</p>
                 </div>
 
                 <div className="footer-section">
@@ -23,9 +23,8 @@ function Footer() {
 
                 <div className="footer-section">
                     <h4 className="footer-title">Ми в соцмережах</h4>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer-link">Facebook</a>
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer" className="footer-link">Instagram</a>
-                    <a href="https://t.me/yourchannel" target="_blank" rel="noreferrer" className="footer-link">Telegram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61578183941728" target="_blank" rel="noreferrer" className="footer-link">Facebook</a>
+                    <a href="https://www.instagram.com/sto_autovibe/?fbclid=IwY2xjawLu30lleHRuA2FlbQIxMABicmlkETF6c3hjRGdBUWEwVjd3R3BEAR5P4-5CoqlbZSHPna3zlWzt3irR1V1qGDEXiCmbLUOGAohbhWewNB5gJFw_9w_aem_bokb5pFkZPGtT2f1iqvjjA#" target="_blank" rel="noreferrer" className="footer-link">Instagram</a>
                 </div>
 
             </div>
