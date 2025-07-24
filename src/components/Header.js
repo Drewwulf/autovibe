@@ -10,7 +10,10 @@ function Header() {
         <header className="header">
             <div className="container">
                 <div className="logo">
-                    <img src="/logo.jpg" alt="AUTO VIBE Logo" className="logo-icon" />
+                    <NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)} end>
+                        <img src="/logo.jpg" alt="AUTO VIBE Logo" className="logo-icon" />
+                    </NavLink>
+
                     <span style={{ fontWeight: 800, fontSize: '2.0rem', color: '#fff' }}>AUTO VIBE</span>
                 </div>
 
