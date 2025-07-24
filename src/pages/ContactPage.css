@@ -1,0 +1,113 @@
+.contact-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    padding: 60px 20px;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1 1 350px;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    color: #d42c2c;
+    font-weight: 700;
+    text-shadow: 0 0 6px #ff4a4a;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.contact-details li {
+    margin-bottom: 12px;
+}
+
+.contact-details strong {
+    color: #ff4a4a;
+}
+
+.contact-form {
+    flex: 1 1 400px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #222;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    box-shadow: 0 0 24px rgba(255, 0, 0, 0.7);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: #eee;
+    font-size: 1rem;
+    resize: none;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #444;
+    box-shadow: 0 0 8px #d42c2c;
+}
+
+.contact-form button {
+    background: #d42c2c;
+    border: none;
+    padding: 14px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ff4a4a;
+}
+
+.success-message {
+    margin-top: 12px;
+    color: #4caf50;
+    font-weight: 700;
+    text-align: center;
+}

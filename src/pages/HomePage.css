@@ -1,0 +1,144 @@
+.hero-section {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding-left: 5vw;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    text-align: left;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.hero-button {
+    background-color: #d42c2c;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ff4a4a;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh !important;
+    }
+
+    .hero-text {
+        max-width: 100% !important;
+        padding-left: 3vw !important;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+    }
+}
+
+.services-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services-title {
+    max-width: 600px;
+    margin: 40px auto 24px auto;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #d42c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(212, 44, 44, 0.6);
+}
+
+.service-item {
+    position: relative;
+    padding: 16px 20px 16px 40px;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    color: #eee;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 12px;
+    cursor: default;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item::before {
+    content: "✔";
+    /* ✔ ✔️ можна замінити на будь-який символ або SVG */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d42c2c;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgba(212, 44, 44, 0.7);
+}
+
+.service-item:hover {
+    background: rgba(212, 44, 44, 0.15);
+    box-shadow: 0 8px 20px rgba(212, 44, 44, 0.5);
+    transform: translateX(10px);
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 90%;
+    }
+}
