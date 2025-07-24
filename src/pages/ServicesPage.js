@@ -4,7 +4,7 @@ import "./ServicesPage.css";
 
 function ServicesPage() {
     useEffect(() => {
-        document.title = "Головна | AUTO VIBE";
+        document.title = "Послуги | AUTO VIBE";
     }, []);
 
     const services = [

@@ -4,7 +4,7 @@ import "./ContactPage.css";
 
 function ContactPage() {
     useEffect(() => {
-        document.title = "Головна | AUTO VIBE";
+        document.title = "Контакти | AUTO VIBE";
     }, []);
     const [formData, setFormData] = useState({
         name: "",
