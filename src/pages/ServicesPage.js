@@ -1,5 +1,5 @@
 // src/pages/ServicesPage.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import "./ServicesPage.css";
 
 function ServicesPage() {
