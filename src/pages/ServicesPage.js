@@ -1,6 +1,9 @@
 // src/pages/ServicesPage.jsx
 import React from "react";
 import "./ServicesPage.css";
+useEffect(() => {
+    document.title = "Головна | AUTO VIBE";
+}, []);
 
 function ServicesPage() {
     const services = [

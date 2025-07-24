@@ -1,5 +1,10 @@
 import React from "react";
 import "./HomePage.css";
+import { useEffect } from 'react';
+
+useEffect(() => {
+    document.title = "Головна | AUTO VIBE";
+}, []);
 
 function HomePage() {
     const services = [
