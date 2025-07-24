@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
-useEffect(() => {
-    document.title = "Головна | AUTO VIBE";
-}, []);
+
 
 function ContactPage() {
+    useEffect(() => {
+        document.title = "Головна | AUTO VIBE";
+    }, []);
     const [formData, setFormData] = useState({
         name: "",
         email: "",

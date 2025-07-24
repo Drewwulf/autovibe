@@ -1,11 +1,12 @@
 // src/pages/ServicesPage.jsx
 import React from "react";
 import "./ServicesPage.css";
-useEffect(() => {
-    document.title = "Головна | AUTO VIBE";
-}, []);
 
 function ServicesPage() {
+    useEffect(() => {
+        document.title = "Головна | AUTO VIBE";
+    }, []);
+
     const services = [
         {
             id: 1,

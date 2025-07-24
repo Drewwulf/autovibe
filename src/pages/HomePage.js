@@ -2,11 +2,12 @@ import React from "react";
 import "./HomePage.css";
 import { useEffect } from 'react';
 
-useEffect(() => {
-    document.title = "Головна | AUTO VIBE";
-}, []);
+
 
 function HomePage() {
+    useEffect(() => {
+        document.title = "Головна | AUTO VIBE";
+    }, []);
     const services = [
         { id: 1, title: "Рихтовка та покраска" },
         { id: 2, title: "Заправлення кондиціонерів" },
