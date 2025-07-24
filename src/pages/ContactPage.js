@@ -46,11 +46,13 @@ function ContactPage() {
                     className="contact-form"
                     onSubmit={handleSubmit}
                 >
+                    {/* Обов'язково для Netlify */}
                     <input type="hidden" name="form-name" value="contact" />
 
+                    {/* Honeypot для ботів */}
                     <p hidden>
                         <label>
-                            Не заповнювати (ботам): <input name="bot-field" />
+                            Don’t fill this out: <input name="bot-field" />
                         </label>
                     </p>
 
@@ -68,6 +70,7 @@ function ContactPage() {
                         <p className="error-message">Сталася помилка. Спробуйте пізніше.</p>
                     )}
                 </form>
+
             </div>
         </section>
     );
