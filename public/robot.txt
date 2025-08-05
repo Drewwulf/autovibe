@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
-Sitemap: https://tviydomen.com/sitemap.xml
+Sitemap: https://stoautovibe.com.ua/sitemap.xml
