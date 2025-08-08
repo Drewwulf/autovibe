@@ -7,12 +7,13 @@
   to = "/"
   status = 200
 
+# Налаштування для production — твій основний домен
 [context.production]
   command = "npm run build"
   publish = "build"
-  # Для production (stoautovibe.com.ua) заголовки НЕ додаємо
+  # Тут не додаємо заголовок noindex
 
-# Для всіх інших контекстів (preview, netlify.app) — додаємо noindex
+# Для усіх інших деплоїв (preview, netlify.app) — додаємо noindex
 [[headers]]
   for = "/*"
   [headers.values]
