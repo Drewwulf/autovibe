@@ -7,14 +7,3 @@
   to = "/"
   status = 200
 
-# Налаштування для production — твій основний домен
-[context.production]
-  command = "npm run build"
-  publish = "build"
-  # Тут не додаємо заголовок noindex
-
-# Для усіх інших деплоїв (preview, netlify.app) — додаємо noindex
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex"
