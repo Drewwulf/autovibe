@@ -7,16 +7,12 @@
   to = "/"
   status = 200
 
-# Налаштування для production (stoautovibe.com.ua) — індексація дозволена, без noindex
 [context.production]
   command = "npm run build"
   publish = "build"
-  [[headers]]
-    for = "/*"
-    [headers.values]
-      # не ставимо X-Robots-Tag — індексація дозволена
+  # Для production (stoautovibe.com.ua) заголовки НЕ додаємо
 
-# Для інших контекстів (preview, netlify.app) — заборона індексації
+# Для всіх інших контекстів (preview, netlify.app) — додаємо noindex
 [[headers]]
   for = "/*"
   [headers.values]
