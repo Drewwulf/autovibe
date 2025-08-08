@@ -6,3 +6,12 @@
   from = "/success"
   to = "/"
   status = 200
+
+[context.production]
+  command = "npm run build"
+  publish = "build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
